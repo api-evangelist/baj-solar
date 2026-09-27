@@ -1,23 +1,51 @@
 aid: baj-solar
+
 name: BAJ Solar
-description: 'BAJ Solar is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'BAJ Solar is a stub entry created by the API Evangelist harvest process from secondary-market data. The company is identified as operating in the solar energy sector, but no public website or detailed corporate information has been located. This placeholder entry will be enriched as additional authoritative sources become available.'
+
 url: https://raw.githubusercontent.com/api-evangelist/baj-solar/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-27 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-27'
+
 modified: '2026-09-27'
+
 tags:
 - Company
-apis: []
+- Solar
+- Energy
+- Renewable
+- Technology
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/baj-solar-hosts.yml
+- type: Vendors
+  url: vendors/baj-solar-vendors.yml
+- type: DomainSecurity
+  url: security/baj-solar-domain-security.yml
 - type: Website
   url: https://www.nasdaqprivatemarket.com/
+
+apis: []
+x-enrichment:
+  date: '2026-09-27'
+  status: enriched
+  artifacts_added: 3
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
